@@ -9,7 +9,10 @@ class NumbersPadge extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: const Color(0xFF607D8B),
-        title: const Text('Numbers'),
+        title: const Text(
+          'Numbers',
+          style: TextStyle(fontFamily: 'Protest'),
+        ),
       ),
       body: ListView(
         children: [

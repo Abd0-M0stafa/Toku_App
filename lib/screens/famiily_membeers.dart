@@ -9,7 +9,10 @@ class FamilyMembers extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: const Color(0xFF607D8B),
-        title: const Text('Family Members'),
+        title: const Text(
+          'Family Members',
+          style: TextStyle(fontFamily: 'Protest'),
+        ),
       ),
       body: ListView(
         children: [

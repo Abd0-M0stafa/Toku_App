@@ -9,7 +9,10 @@ class Phrases extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: const Color(0xFF607D8B),
-        title: const Text('Phrases'),
+        title: const Text(
+          'Phrases',
+          style: TextStyle(fontFamily: 'Protest'),
+        ),
       ),
       body: ListView(
         children: [

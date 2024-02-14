@@ -1,20 +1,19 @@
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 
-Widget container(String text, Color color, Function() ontap) {
+Widget container(String text, Function() ontap) {
   return GestureDetector(
     onTap: ontap,
     child: Padding(
       padding: const EdgeInsets.all(50),
       child: Container(
-        alignment: Alignment.centerLeft,
         height: 65,
-        color: color,
-        child: Text(
-          text,
-          style: const TextStyle(
-            color: Colors.white,
-            fontSize: 18,
+        color: Colors.blueGrey,
+        child: Center(
+          child: Text(
+            text,
+            style: const TextStyle(
+                color: Colors.white, fontSize: 20, fontFamily: 'Protest'),
           ),
         ),
       ),
@@ -49,13 +48,15 @@ Widget nums(
                 style: const TextStyle(
                     fontStyle: FontStyle.italic,
                     fontSize: 18,
-                    fontWeight: FontWeight.bold),
+                    fontFamily: 'Protest'),
               ),
               const Text('------'),
               Text(
                 text2,
-                style:
-                    const TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+                style: const TextStyle(
+                  fontFamily: 'Protest',
+                  fontSize: 15,
+                ),
               ),
             ],
           ),

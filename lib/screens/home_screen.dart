@@ -14,25 +14,34 @@ class HomePadge extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.blueGrey,
         title: const Center(
-            child: Text(
-          '- T O K U -',
-          style: TextStyle(fontWeight: FontWeight.bold),
-        )),
+          child: Text(
+            '- T O K U -',
+            style: TextStyle(fontFamily: 'Protest', fontSize: 23),
+          ),
+        ),
       ),
       body: Column(
         children: [
           const Spacer(
             flex: 2,
           ),
-          container('                    Numbers', Colors.blueGrey, () {
-            Navigator.push(context, MaterialPageRoute(builder: (context) {
-              return const NumbersPadge();
-            }));
-          }),
+          container(
+            'Numbers',
+            () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) {
+                    return const NumbersPadge();
+                  },
+                ),
+              );
+            },
+          ),
           const Spacer(
             flex: 1,
           ),
-          container('               Family Members', Colors.blueGrey, () {
+          container('Family Members', () {
             Navigator.push(context, MaterialPageRoute(builder: (context) {
               return const FamilyMembers();
             }));
@@ -40,7 +49,7 @@ class HomePadge extends StatelessWidget {
           const Spacer(
             flex: 1,
           ),
-          container('                      Colors', Colors.blueGrey, () {
+          container('Colors', () {
             Navigator.push(context, MaterialPageRoute(builder: (context) {
               return const MyColors();
             }));
@@ -48,7 +57,7 @@ class HomePadge extends StatelessWidget {
           const Spacer(
             flex: 1,
           ),
-          container('                      Phrases', Colors.blueGrey, () {
+          container('Phrases', () {
             Navigator.push(context, MaterialPageRoute(builder: (context) {
               return const Phrases();
             }));
